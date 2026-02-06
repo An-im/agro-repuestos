@@ -24,12 +24,12 @@ const BrandsSection = () => {
         </div>
 
         {/* Grid de marcas */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-8">
           {brands.map((brand) => (
             <Link
               to={`/marca/${brand.id}`}
               key={brand.id}
-              className="group bg-white/95 rounded-2xl p-12 shadow-lg 
+              className="group bg-white/95 rounded-2xl p-8 md:p-12 shadow-lg 
                          hover:shadow-2xl hover:-translate-y-1 
                          hover:border hover:border-technicalGreen/30 
                          transition-all duration-300 text-center"
