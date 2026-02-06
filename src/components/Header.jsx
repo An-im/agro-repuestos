@@ -5,16 +5,26 @@ import { useState, useEffect } from "react"
 const Header = () => {
   const [open, setOpen] = useState(false)
   useEffect(() => {
-      const handleScroll = () => {
-        setOpen(false)
-      }
-  
-      window.addEventListener("scroll", handleScroll)
-  
-      return () => {
-        window.removeEventListener("scroll", handleScroll)
-      }
-    }, [])
+  if (!open) return
+
+  const startScrollY = window.scrollY
+
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY
+
+    if (Math.abs(currentScrollY - startScrollY) > 120) {
+      setOpen(false)
+    }
+  }
+
+  window.addEventListener("scroll", handleScroll)
+
+  return () => {
+    window.removeEventListener("scroll", handleScroll)
+  }
+}, [open])
+
+
 
   
 

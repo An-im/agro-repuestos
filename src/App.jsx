@@ -11,10 +11,13 @@ import Product from "./pages/Product"
 import Stock from "./pages/Stock"
 import Nosotros from "./pages/Nosotros"
 import Contacto from "./pages/Contacto"
+import ScrollToTop from "./components/ScrollToTop"
 
 function App() {
   return (
     <BrowserRouter>
+    <ScrollToTop />
+
       <div className="min-h-screen flex flex-col bg-gradient-to-b from-[#2B2F36] to-[#23272F]">
 
         <Header />
