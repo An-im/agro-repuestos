@@ -36,7 +36,7 @@ const Product = () => {
   const whatsappLink = `https://wa.me/549XXXXXXXXXX?text=${whatsappMessage}`
 
   return (
-    <section className="py-20">
+    <section className="pt-10 md:pt-14 pb-20">
       <div className="max-w-layout mx-auto px-6">
 
         <Breadcrumb

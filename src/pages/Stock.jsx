@@ -34,7 +34,7 @@ const Stock = () => {
   )
 
   return (
-    <section className="py-20">
+    <section className="pt-10 md:pt-14 pb-20">
       <div className="max-w-layout mx-auto px-6">
 
         <div className="mb-8">
