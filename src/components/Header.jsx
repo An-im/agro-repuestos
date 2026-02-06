@@ -1,8 +1,22 @@
 import { Link } from "react-router-dom"
-import { useState } from "react"
+import { useState, useEffect } from "react"
+
 
 const Header = () => {
   const [open, setOpen] = useState(false)
+  useEffect(() => {
+      const handleScroll = () => {
+        setOpen(false)
+      }
+  
+      window.addEventListener("scroll", handleScroll)
+  
+      return () => {
+        window.removeEventListener("scroll", handleScroll)
+      }
+    }, [])
+
+  
 
   return (
     <header className="sticky top-0 z-50 backdrop-blur-md bg-[#2B2F36]/80 border-b border-white/5">
