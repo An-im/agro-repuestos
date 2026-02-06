@@ -4,10 +4,13 @@ import BrandsSection from "../components/BrandsSection"
 const Home = () => {
   return (
     <div className="flex flex-col items-center">
+
+      <Hero />
+
       <div className="w-full max-w-layout px-6">
-        <Hero />
         <BrandsSection />
       </div>
+
     </div>
   )
 }
