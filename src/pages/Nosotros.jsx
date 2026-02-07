@@ -12,18 +12,22 @@ const Nosotros = () => {
             { label: "Nosotros" }
           ]}
         />
-        <div className="relative mb-16 rounded-2xl overflow-hidden">
-          <img
-            src="/images/cosechadora.jpg"
-            alt="Cosechadora trabajando en el campo"
-            className="w-full h-[400px] object-cover"
-          />
-          <div className="absolute inset-0 bg-black/40"></div>
-        </div>
+      <div className="relative w-full h-[280px] md:h-[420px] mb-16 overflow-hidden">
+      <img
+        src="/images/cosechadora.jpg"
+        alt="Cosechadora trabajando en el campo"
+        className="w-full h-full object-cover"
+      />
+      </div>
+      <div className="mb-12">
+  <p className="text-technicalGreen uppercase tracking-widest text-sm mb-3">
+    Nuestra historia
+  </p>
 
-        <h1 className="text-white text-4xl font-semibold mb-10">
-          Quiénes Somos
-        </h1>
+  <h1 className="text-white text-3xl md:text-4xl font-semibold">
+    Experiencia real en maquinaria agrícola
+  </h1>
+</div>
 
         <div className="max-w-4xl space-y-8 text-gray-300 leading-relaxed">
 
